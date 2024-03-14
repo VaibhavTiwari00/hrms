@@ -1,0 +1,203 @@
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/header.php on line 253
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home3/saaoldelhiind545/hrm.saaol.com/includes/header.php on line 264
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home3/saaoldelhiind545/hrm.saaol.com/includes/header.php on line 266
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/header.php on line 269
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/header.php on line 281
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home3/saaoldelhiind545/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/list.php on line 85
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/list.php on line 85
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/list.php on line 92
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/list.php on line 92
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/list.php on line 126
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/main_function.php on line 146
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/main_function.php on line 178
+[12-Feb-2024 16:17:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home3/saaoldelhiind545/hrm.saaol.com/includes/main_function.php on line 235
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:52 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 10:16:55 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[13-Feb-2024 13:41:51 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[17-Feb-2024 10:36:02 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 221
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 248
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[23-Feb-2024 10:30:57 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home3/saaoldelhiind545/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[27-Feb-2024 09:54:28 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:48 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[28-Feb-2024 11:37:49 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:43:24 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:36 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[29-Feb-2024 12:44:37 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 126
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 201
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 233
+[01-Mar-2024 09:18:00 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 290
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 126
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[08-Mar-2024 12:14:26 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[08-Mar-2024 13:56:01 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[10-Mar-2024 12:38:43 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Undefined array key "um_image" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 221
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 248
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[11-Mar-2024 11:18:13 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/view_project.php on line 251
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 85
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 92
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/project/list.php on line 126
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[11-Mar-2024 14:06:31 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337

@@ -1,0 +1,26 @@
+RewriteEngine on
+
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+Options -Indexes
+
+ErrorDocument 404 http://localhost/saaol_work/project_HRA/new_HRA/404
+ErrorDocument 403 http://localhost/saaol_work/project_HRA/new_HRA/404
+
+ReWriteRule ^([/]?)$ pages/home.php [NC,L]
+ReWriteRule ^login([/]?)$ pages/login.php [NC,L]
+ReWriteRule ^logout([/]?)$ pages/logout.php [NC,L]
+
+ReWriteRule ^([^/]+)/?$ pages/$1.php [NC,L]
+
+RewriteRule ^user/([^/]+)/?$ pages/user/$1.php [NC,L]
+
+# RewriteRule ^project/([^/]+)/?$ pages/projects/$1.php [NC,L]
+
+RewriteRule ^tasks/([^/]+)/?$ pages/tasks/$1.php [NC,L]
+
+RewriteRule ^project/([^/]+)/?$ pages/project/$1.php [NC,L]
+# # Company Reviews End

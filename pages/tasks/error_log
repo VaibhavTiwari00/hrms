@@ -1,0 +1,242 @@
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 214
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 246
+[02-Mar-2024 11:39:39 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 303
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 214
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 246
+[05-Mar-2024 09:25:43 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 303
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 214
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 246
+[05-Mar-2024 09:25:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 303
+[06-Mar-2024 10:59:45 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/session.php on line 36
+[06-Mar-2024 10:59:45 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/session.php on line 36
+[08-Mar-2024 00:29:04 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function get_user_list_by_type() in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/task_heirarchy_view.php:340
+Stack trace:
+#0 {main}
+  thrown in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/task_heirarchy_view.php on line 340
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/add.php on line 175
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/add.php on line 218
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/add.php on line 219
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key 0 in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/add.php on line 222
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Trying to access array offset on value of type null in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/add.php on line 222
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[09-Mar-2024 09:12:55 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 106
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[09-Mar-2024 09:23:59 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 106
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 102
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 106
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 248
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 280
+[11-Mar-2024 12:18:45 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 337
+[11-Mar-2024 14:34:28 Asia/Kolkata] PHP Warning:  Undefined array key "tm_reference_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_repetitive_task.php on line 201
+[11-Mar-2024 16:43:14 Asia/Kolkata] PHP Warning:  Undefined array key "tm_reference_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_repetitive_task.php on line 201
+[12-Mar-2024 09:38:26 Asia/Kolkata] PHP Warning:  Undefined array key "tm_reference_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_repetitive_task.php on line 201
+[12-Mar-2024 10:04:03 Asia/Kolkata] PHP Warning:  Undefined array key "tm_reference_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_repetitive_task.php on line 201
+[12-Mar-2024 10:55:25 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:55:27 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:55:28 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:55:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:55:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:56:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:56:28 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:56:29 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:56:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:13 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:17 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:19 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:19 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:19 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:20 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:21 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:23 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:23 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:23 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:24 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:26 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:58:42 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:59:35 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 10:59:41 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:00:32 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:02:30 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:02:33 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:02:36 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:02:39 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:02:43 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:03:10 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:04:08 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:04:12 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 11:04:14 Asia/Kolkata] PHP Parse error:  syntax error, unexpected integer "0000" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 837
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 159
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 163
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 381
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 250
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 282
+[12-Mar-2024 12:03:11 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 339
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 159
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 381
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 250
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 282
+[12-Mar-2024 12:03:15 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 339
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 159
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 163
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 381
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 250
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 282
+[12-Mar-2024 12:03:57 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 339
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 159
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 381
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 250
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 282
+[12-Mar-2024 12:04:44 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 339
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 253
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Attempt to read property "um_image" on bool in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Deprecated:  htmlentities(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 264
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "userlogin" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Deprecated:  ucfirst(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 266
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 269
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Deprecated:  base64_encode(): Passing null to parameter #1 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/header.php on line 281
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "module_access" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Deprecated:  explode(): Passing null to parameter #2 ($string) of type string is deprecated in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/sidebar.php on line 24
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 159
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 171
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_type" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/pages/tasks/view_task.php on line 381
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 250
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 282
+[14-Mar-2024 09:22:50 Asia/Kolkata] PHP Warning:  Undefined array key "user_id" in /home/saaolwfghrtsd/public_html/hrm.saaol.com/includes/main_function.php on line 339
