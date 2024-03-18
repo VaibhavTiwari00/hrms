@@ -394,7 +394,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
     $res = $statement->execute();
 
     $activity_type = 7;
-    log_of_task_activity($DB, $task_id, $task_project_id, $activity_type);
+    log_of_task_activity($DB, $task_id, $task_project_id, $activity_type, $modify_by);
 
     // echo 1;
     $data['status'] = true;
@@ -508,7 +508,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
 
     $res = $statement->execute();
     $activity_type = 7;
-    log_of_task_activity($DB, $task_id, $task_project_id, $activity_type);
+    log_of_task_activity($DB, $task_id, $task_project_id, $activity_type, $modify_by);
 
     // echo 1;
     $data['status'] = true;
@@ -547,7 +547,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
 
         $activity_type = 1;
         $project_id = get_project_id_by_task_id($DB, $get_data_arr[1]);
-        log_of_task_activity($DB, $get_data_arr[1], $project_id[0]['pm_id'], $activity_type);
+        log_of_task_activity($DB, $get_data_arr[1], $project_id[0]['pm_id'], $activity_type, $modify_by);
 
         echo json_encode($data);
     } else if ($get_data_arr[0] == 'inactive') {
@@ -602,7 +602,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
         $res = $statement->execute();
         $activity_type = 5;
         $project_id = get_project_id_by_task_id($DB, $get_data_arr[1]);
-        log_of_task_activity($DB, $get_data_arr[1], $project_id[0]['pm_id'], $activity_type);
+        log_of_task_activity($DB, $get_data_arr[1], $project_id[0]['pm_id'], $activity_type, $_SESSION['user_id']);
 
         $data['status'] = true;
         $data['msg'] = "Task Completed Successfully";
@@ -656,7 +656,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
 
     $activity_type = 3;
     $project_id = get_project_id_by_task_id($DB, $task_id);
-    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type);
+    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type, $modify_by);
 
     $data['status'] = true;
     $data['msg'] = "Task Sent For Approval";
@@ -706,7 +706,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
 
     $activity_type = 4;
     $project_id = get_project_id_by_task_id($DB, $task_id);
-    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type);
+    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type, $modify_by);
 
     $data['status'] = true;
     $data['msg'] = "Task Reassign Successfully";
@@ -742,7 +742,7 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "add_task") {
     $res = $statement->execute();
     $activity_type = 5;
     $project_id = get_project_id_by_task_id($DB, $task_id);
-    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type);
+    log_of_task_activity($DB, $task_id, $project_id[0]['pm_id'], $activity_type, $modify_by);
 
     $data['status'] = true;
     $data['msg'] = "Task Completed Successfully";

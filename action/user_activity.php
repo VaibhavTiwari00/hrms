@@ -35,10 +35,12 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "user_activity") {
         $a['task_title'] = $task_details[0]['task_title'];
         $a['task_id'] = $activity["tm_id"];
         $activity_task_of_uni_task =  get_all_activity_acc_date_or_task($DB, $date, $activity["tm_id"], $user_id);
-        
+
         $first_active = get_first_activity_acc_date_or_task_or_activity($DB, $date, $activity["tm_id"], 1, $user_id);
-        
+
         $last_inactive = get_last_activity_acc_date_or_task_or_activity($DB, $date, $activity["tm_id"], 2, $user_id);
+
+        $completed_last_task =  get_last_activity_acc_date_or_task_or_activity($DB, $date, $activity["tm_id"], 3, $user_id);
         // print_r($first_active[0]);
         // echo '<br>';
         // print_r($last_inactive[0]);
@@ -58,6 +60,15 @@ if (isset($_REQUEST['do']) && $_REQUEST["do"] == "user_activity") {
             $a['last_inactive'] = $activity_time2;
         } else {
             $a['last_inactive'] = '--:--';
+        }
+
+        if (isset($completed_last_task) && !empty($completed_last_task)) {
+
+            $dateTime3 = new DateTime($completed_last_task[0]['tal_created_date']);
+            $activity_time3 = $dateTime3->format('h:i A');
+            $a['last_complete'] = $activity_time2;
+        } else {
+            $a['last_complete'] = '--:--';
         }
 
         $working_time = get_daily_task_time_acc_date_or_task($DB, $date, $activity["tm_id"], $user_id);

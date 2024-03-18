@@ -1310,16 +1310,16 @@ function get_working_time_date_wise(PDO $DB, $date, $user_id)
 //     }
 // }
 
-function log_of_task_activity(PDO $DB, $task_id, $pm_id, $activity_type, $user_id = null)
+function log_of_task_activity(PDO $DB, $task_id, $pm_id, $activity_type, $user_id, $currentDateTime = null)
 {
     if ($user_id == null) {
         $created_by = $_SESSION['user_id'];
     } else {
         $created_by = $user_id;
     }
+    $currentDateTime = $currentDateTime == null ? date('Y-m-d H:i:s') : $currentDateTime;
 
-
-    $sql = "INSERT INTO tbl_task_activities_log(`tm_id`,`pm_id`,`task_activity_type`,`tal_created_by`) VALUES (:tm_id,:pm_id,:task_activity_type,:tal_created_by)";
+    $sql = "INSERT INTO tbl_task_activities_log(`tm_id`,`pm_id`,`task_activity_type`,`tal_created_by`,`tal_created_date`) VALUES (:tm_id,:pm_id,:task_activity_type,:tal_created_by,:tal_created_date)";
 
     $statement = $DB->prepare($sql);
 
@@ -1327,6 +1327,7 @@ function log_of_task_activity(PDO $DB, $task_id, $pm_id, $activity_type, $user_i
     $statement->bindValue(":pm_id", $pm_id);
     $statement->bindValue(":task_activity_type", $activity_type);
     $statement->bindValue(":tal_created_by", $created_by);
+    $statement->bindValue(":tal_created_date", $currentDateTime);
 
     $res = $statement->execute();
 }
@@ -1378,7 +1379,7 @@ function inactive_cur_task_of_user(PDO $DB, $user_id, $currentDateTime = null)
 
         $statement->execute();
 
-        log_of_task_activity($DB, $res[0]['tm_id'], $res[0]['pm_id'], $activity_type);
+        log_of_task_activity($DB, $res[0]['tm_id'], $res[0]['pm_id'], $activity_type, $_SESSION['user_id'], $currentDateTime);
     }
 }
 

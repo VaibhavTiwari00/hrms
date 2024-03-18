@@ -452,6 +452,7 @@ function timeUntilNextDay()
                                                         <th class="text-center">Time Summary</th>
 
                                                         <th class="text-center" style="min-width:200px">Active Status</th>
+                                                        <th class="text-center">Today Task Status</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -486,6 +487,7 @@ function timeUntilNextDay()
                                                                     <span><?= get_all_task_count_of_user($DB, $row['user_unique_id']) ?> </span> <span class="text-muted">total tasks </span>
                                                                 </small>
                                                             </td>
+
                                                             <?php $login_time = get_login_time_date_wise($DB, $date, $row['user_unique_id']);
                                                             $logout_time = get_logout_time_date_wise($DB, $date, $row['user_unique_id']);
                                                             $working_time = get_working_time_date_wise($DB, $date, $row['user_unique_id']);
@@ -496,10 +498,10 @@ function timeUntilNextDay()
                                                                     <b>Login:</b>
                                                                     <?= $login_time ?> | <b>working: </b> <?= $working_time ?> <br>
                                                                     |
-                                                                    <b>Idle:</b> --:--:-- | <b>break:</b> <?= get_break_time_acc_date($DB, $date, $row['user_unique_id'])   ?> | <b>Logout:</b> <?= $logout_time == 'Active' ? '--:--' : $logout_time;
-                                                                                                                                                                                                ?>
+                                                                    <b>Idle:</b> --:--:-- | <b>break:</b> <?= get_break_time_acc_date($DB, $date, $row['user_unique_id'])   ?> | <b>Logout:</b> <?= $logout_time == 'Active' ? '--:--' : $logout_time; ?>
 
                                                                 </td>
+
                                                             <?php } else { ?>
                                                                 <td class="text-center"> Absent</td>
                                                             <?php
@@ -534,6 +536,29 @@ function timeUntilNextDay()
                                                                 ?>
                                                             </td>
 
+
+                                                            <td class="table_home_font text-center">
+                                                                <?php
+                                                                if ($login_time !== 'Absent') { ?>
+
+                                                                    <p class="mb-0">
+                                                                        <span>Active Task:</span> <b>
+                                                                            <?=
+                                                                            json_decode(get_how_many_task_user_active_datewise($DB, $row['user_unique_id'], 1, null), true)['rowCount'];
+                                                                            ?></b>
+                                                                        <br> <span>Complete Task:</span> <b>
+                                                                            <?=
+                                                                            json_decode(get_how_many_task_user_active_datewise($DB, $row['user_unique_id'], 3, null), true)['rowCount'] ?></b>
+
+                                                                        <br>
+                                                                        <a class="btn btn-sm mb-0 status_btn btn-success btn_check" style="color:#fff;" href="<?= home_path() . '/user/user_activity?id=' . base64_encode($row['user_unique_id']) ?>">Activity</a>
+
+                                                                    </p>
+
+                                                                <?php } else {
+                                                                    echo 'Absent';
+                                                                } ?>
+                                                            </td>
                                                         </tr>
 
                                                     <?php } ?>
@@ -637,7 +662,7 @@ function timeUntilNextDay()
 
                                                                         ?>
                                                                     </a>
-                                                                    <button class="btn btn-sm mb-0 status_btn btn-success btn_check"><a style="color:#fff;" href="<?= home_path() . '/user/user_activity?id=' . base64_encode($rowres['user_unique_id']) ?>">Activity</a></button>
+                                                                    <!-- <a class="btn btn-sm mb-0 status_btn btn-success btn_check" style="color:#fff;" href="<?= home_path() . '/user/user_activity?id=' . base64_encode($rowres['user_unique_id']) ?>">Activity</a> -->
                                                                     <p class="text-muted mb-0 ml-2 designation_heading"><?= !empty($team_res) ?  $team_res[0]['designation_name'] : '' ?> </p>
                                                                     <small class="block text-ellipsis ml-2">
                                                                         <small style="font-size: 95%;">
@@ -731,15 +756,19 @@ function timeUntilNextDay()
                                                         if ($login_time !== 'Absent') { ?>
 
                                                             <p class="mb-0">
-                                                                <span>Active Task:</span> <b><?=
-                                                                                                json_decode(get_how_many_task_user_active_datewise($DB, $rowres['user_unique_id'], 1, null), true)['rowCount'];
-                                                                                                ?></b>
+                                                                <span>Active Task:</span> <b>
+                                                                    <?=
+                                                                    json_decode(get_how_many_task_user_active_datewise($DB, $rowres['user_unique_id'], 1, null), true)['rowCount'];
+                                                                    ?></b>
                                                                 <br> <span>Complete Task:</span> <b>
                                                                     <?=
                                                                     json_decode(get_how_many_task_user_active_datewise($DB, $rowres['user_unique_id'], 3, null), true)['rowCount'] ?></b>
 
+                                                                <br>
+                                                                <a class="btn btn-sm mb-0 status_btn btn-success btn_check" style="color:#fff;" href="<?= home_path() . '/user/user_activity?id=' . base64_encode($rowres['user_unique_id']) ?>">Activity</a>
 
                                                             </p>
+
                                                         <?php } else {
                                                             echo 'Absent';
                                                         } ?>

@@ -13,14 +13,7 @@ if (isset($_GET['id'])) {
 } else {
     die("Error");
 }
-// $get_results = get_user_details_by_id($DB, $get_user_id);
-// $login_time = convertToAmPmFormat(get_login_time_date_wise($DB, $date, $get_user_id));
-// $logout_time = get_logout_time_date_wise($DB, $date, $get_user_id);
-// $total_time = get_working_time_date_wise($DB, $date, $get_user_id);
-// $break_time = get_break_time_acc_date($DB, $date, $get_user_id);
-// $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
 
-// print_r($activity_task);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -218,7 +211,7 @@ if (isset($_GET['id'])) {
                                             <div class="col-md-7">
                                                 <div class="form-group w-50 mb-0">
                                                     <label>Select Date</label>
-                                                    <input name="date" id="date" class="form-control" required="" type="date" value="<?= date('Y-m-d') ?>">
+                                                    <input name="date" id="date" class="form-control" required="" type="date" value="<?= date('Y-m-d') ?>" max="<?= date('Y-m-d') ?>">
                                                 </div>
                                             </div>
                                         </div>
@@ -377,16 +370,16 @@ if (isset($_GET['id'])) {
                         // console.log(activity.task_title, activity.activity_time);
                         activity.activity_of_task.forEach(function(subActivity) {
                             test += `<li class="activity_li activity_li_2">
-                            <p class="mb-0"> ${subActivity.task_activity_type}</p>
+                            <p class="mb-0"> ${subActivity.task_activity_type} at</p>
                             <p class="res-activity-time ">
-                            <i class="fa fa-clock-o"></i>${subActivity.activity_time} 
+                            <i class="fa fa-clock-o mr-1"></i>${subActivity.activity_time} 
                             </p></li>`;
                         });
                         activity_ul.innerHTML += `<li class="activity_li" id="activity_li_${i}">
                                        <div class="d-flex align-items-center justify-content-between">
                                         <div> <p class="mb-0"> ${activity.task_title}</p>
                                         <p class="res-activity-time d-flex align-items-center ">
-                                            <b>Active Time: </b> <span class="mx-1"> ${activity.first_active} </span> <b> | Inactive Task: </b> <span class="mx-1">${activity.last_inactive}</span> <b> | Working Time: </b> <span class="mx-1">${activity.working_time} hrs</span>
+                                            <b>Pick Up Time: </b> <span class="mx-1"> ${activity.first_active} </span> <b> | Complete Task: </b> <span class="mx-1">${activity.last_complete}</span> <b> | Working Time: </b> <span class="mx-1">${activity.working_time} hrs</span>
                                         </p> </div>
                                         <i class="fa fa-chevron-down mr-1" aria-hidden="true" id="activity_li_${i}_i"></i>
                                        </div>
