@@ -1,11 +1,8 @@
 RewriteEngine on
-
-RewriteCond %{HTTPS} off
-RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
-
 RewriteCond %{REQUEST_FILENAME} !-f
 
 Options -Indexes
+
 
 ErrorDocument 404 http://localhost/saaol_work/project_HRA/new_HRA/404
 ErrorDocument 403 http://localhost/saaol_work/project_HRA/new_HRA/404

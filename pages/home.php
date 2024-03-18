@@ -200,6 +200,10 @@ function timeUntilNextDay()
         .create_task_home_btn {
             float: unset !important;
         }
+
+        .btn_check {
+            font-size: 13px;
+        }
     </style>
 
 </head>
@@ -633,6 +637,7 @@ function timeUntilNextDay()
 
                                                                         ?>
                                                                     </a>
+                                                                    <button class="btn btn-sm mb-0 status_btn btn-success btn_check"><a style="color:#fff;" href="<?= home_path() . '/user/user_activity?id=' . base64_encode($rowres['user_unique_id']) ?>">Activity</a></button>
                                                                     <p class="text-muted mb-0 ml-2 designation_heading"><?= !empty($team_res) ?  $team_res[0]['designation_name'] : '' ?> </p>
                                                                     <small class="block text-ellipsis ml-2">
                                                                         <small style="font-size: 95%;">
@@ -650,6 +655,7 @@ function timeUntilNextDay()
                                                                             <?php } ?>
 
                                                                         </small>
+
                                                                     </small>
                                                                 </div>
                                                             </div>

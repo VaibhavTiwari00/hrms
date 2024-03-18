@@ -2,49 +2,23 @@
 
 include('../../init.php');
 
-function convertToAmPmFormat($inputDate)
-{
-    // Create a DateTime object from the input date string
-    $dateTime = DateTime::createFromFormat('H:i:s', $inputDate);
 
-    // Check if the conversion was successful
-    if ($dateTime !== false) {
-        // Format the DateTime object to AM/PM format
-        $amPmFormat = $dateTime->format('h:i A');
-        return $amPmFormat;
-    } else {
-        // Return an error message if the conversion fails
-        return "Invalid date format";
-    }
+
+
+
+if (isset($_GET['id'])) {
+    $get_user_id = base64_decode($_GET['id']);
+    $date = date('Y-m-d');
+    $get_results = get_user_details_by_id($DB, $get_user_id);
+} else {
+    die("Error");
 }
-function convertTimeToHoursMinutes($timeString)
-{
-    // Create a DateTime object from the input time string
-    $dateTime = DateTime::createFromFormat('H:i:s', $timeString);
-
-    // Check if the conversion was successful
-    if ($dateTime !== false) {
-        // Get hours and minutes separately
-        $hours = $dateTime->format('H');
-        $minutes = $dateTime->format('i');
-
-        // Format the result
-        $result = $hours . ':' . $minutes . ' hrs';
-
-        return $result;
-    } else {
-        // Return an error message if the conversion fails
-        return "Invalid time format";
-    }
-}
-$get_user_id = base64_decode($_GET['id']);
-$date = date('Y-m-d');
-$get_results = get_user_details_by_id($DB, $get_user_id);
-$login_time = convertToAmPmFormat(get_login_time_date_wise($DB, $date, $get_user_id));
-$logout_time = get_logout_time_date_wise($DB, $date, $get_user_id);
-$total_time = get_working_time_date_wise($DB, $date, $get_user_id);
-$break_time = get_break_time_acc_date($DB, $date, $get_user_id);
-$activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
+// $get_results = get_user_details_by_id($DB, $get_user_id);
+// $login_time = convertToAmPmFormat(get_login_time_date_wise($DB, $date, $get_user_id));
+// $logout_time = get_logout_time_date_wise($DB, $date, $get_user_id);
+// $total_time = get_working_time_date_wise($DB, $date, $get_user_id);
+// $break_time = get_break_time_acc_date($DB, $date, $get_user_id);
+// $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
 
 // print_r($activity_task);
 ?>
@@ -64,67 +38,124 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
     <link rel="stylesheet" href="<?= get_assets() ?>css/bootstrap.min.css">
 
     <!-- Fontawesome CSS -->
-
     <link rel="stylesheet" href="<?= get_assets() ?>plugins/fontawesome/css/fontawesome.min.css">
     <link rel="stylesheet" href="<?= get_assets() ?>plugins/fontawesome/css/all.min.css">
 
     <!-- Lineawesome CSS -->
     <link rel="stylesheet" href="<?= get_assets() ?>css/line-awesome.min.css">
 
-
     <!-- Main CSS -->
     <link rel="stylesheet" href="<?= get_assets() ?>css/style.css">
 
-    <style>
-        /* fallback */
-        @font-face {
-            font-family: 'Material Icons';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/materialicons/v95/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format('woff2');
-        }
 
-        /* fallback */
-        @font-face {
-            font-family: 'Material Icons Outlined';
-            font-style: normal;
-            font-weight: 400;
-            src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v72/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2) format('woff2');
-        }
-
-        .material-icons {
-            font-family: 'Material Icons';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            letter-spacing: normal;
-            text-transform: none;
-            display: inline-block;
-            white-space: nowrap;
-            word-wrap: normal;
-            direction: ltr;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .material-icons-outlined {
-            font-family: 'Material Icons Outlined';
-            font-weight: normal;
-            font-style: normal;
-            font-size: 24px;
-            line-height: 1;
-            letter-spacing: normal;
-            text-transform: none;
-            display: inline-block;
-            white-space: nowrap;
-            word-wrap: normal;
-            direction: ltr;
-            -webkit-font-smoothing: antialiased;
-        }
-    </style>
     <!-- Head -->
     <?php include_once HEAD; ?>
     <!-- /Head -->
+    <style>
+        .li_child_div {
+            height: 0;
+            opacity: 0;
+            transition: 0.5s;
+            padding: 0px;
+        }
+
+        .activity_li {
+            cursor: pointer;
+        }
+
+        .active {
+            height: 100%;
+            opacity: 1;
+            padding: 5px 0px;
+        }
+
+        .active_i {
+            transform: rotate(180deg);
+            transition: 0.5s;
+        }
+
+        .active_punch {
+            padding: 10px 0px;
+        }
+
+        .card_activity {
+            height: 398px;
+            overflow-y: scroll;
+        }
+
+        .res-activity-list {
+            height: unset !important;
+            overflow-y: unset !important;
+        }
+
+        .recent-activity .res-activity-time b {
+            color: #222;
+            /* font-weight: 500; */
+        }
+
+        #res_activity_ul>li>div>div>p:first-child {
+            font-size: 14px;
+            font-weight: 600;
+            color: #007bff;
+        }
+
+        .recent-activity .res-activity-time span {
+            color: #000;
+        }
+
+        #res_activity_ul_2:after {
+            border: none;
+        }
+
+        .activity_li_2:before {
+            left: -20px !important;
+            top: 6px !important;
+        }
+
+        .activity_li_2 {
+            margin-bottom: 9px !important;
+        }
+
+        .activity_li_2>p:first-child {
+            color: #000;
+        }
+
+        .activity_li_2:last-child {
+            margin-bottom: 0px !important;
+        }
+
+        .punch-det {
+            border: none;
+        }
+
+        .stats-box {
+            border: none;
+        }
+    </style>
+    <style>
+        .profile-view .profile-img-wrap {
+            height: 70px;
+            width: 70px;
+        }
+
+        .profile-view .profile-img {
+            width: 70px;
+            height: 70px;
+        }
+
+        .profile-img-wrap img {
+            border-radius: 50%;
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+        }
+
+        .profile-view .profile-basic {
+            margin-left: 100px;
+            padding-right: 50px;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -147,115 +178,83 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
 
                 <div class="page-header">
                     <div class="row">
-                        <div class="col-sm-12">
+                        <div class="col-sm-6">
                             <h3 class="page-title">User Activity</h3>
-                            <ul class="breadcrumb">
-                                <li class="breadcrumb-item">Dashboard</li>
-                                <li class="breadcrumb-item">User</li>
-                                <li class="breadcrumb-item active">User Activity</li>
-                            </ul>
+
+                        </div>
+                        <div class="col-sm-6">
+                            <!-- <input type="date" value="<?= date('Y-m-d') ?>" id="date" name="date"> -->
+
                         </div>
                     </div>
                 </div>
-                <!-- <div class="row">
-                    <div class="col-md-12">
-                        <div class="card-group m-b-30">
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div>
-                                            <span class="d-block">New Employees</span>
-                                        </div>
-                                        <div>
-                                            <span class="text-success">+10%</span>
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="profile-view">
+                                    <div class="profile-img-wrap">
+                                        <div class="profile-img">
+                                            <a href="#"><img alt="" src="<?= get_assets() ?>users/<?= $get_results[0]['um_image'] ?>"></a>
                                         </div>
                                     </div>
-                                    <h3 class="mb-3">10</h3>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <p class="mb-0">Overall Employees 218</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div>
-                                            <span class="d-block">Earnings</span>
-                                        </div>
-                                        <div>
-                                            <span class="text-success">+12.5%</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="mb-3">$1,42,300</h3>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <p class="mb-0">Previous Month <span class="text-muted">$1,15,852</span></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div>
-                                            <span class="d-block">Expenses</span>
-                                        </div>
-                                        <div>
-                                            <span class="text-danger">-2.8%</span>
+                                    <div class="profile-basic">
+                                        <div class="row">
+                                            <div class="col-md-5">
+                                                <div class="profile-info-left">
+                                                    <h3 class="user-name m-t-0 mb-0"><?= $get_results[0]['first_name'] . ' ' . $get_results[0]['last_name'] ?></h3>
+
+                                                    <?php $team_res = get_designation_name_by_id($DB, $get_results[0]['designation_id']);
+
+                                                    if ($team_res) { ?>
+                                                        <h6 class="text-muted mt-1">
+                                                            <?= $team_res[0]['designation_name'] ?>
+                                                        </h6>
+                                                    <?php }
+                                                    ?>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7">
+                                                <div class="form-group w-50 mb-0">
+                                                    <label>Select Date</label>
+                                                    <input name="date" id="date" class="form-control" required="" type="date" value="<?= date('Y-m-d') ?>">
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                    <h3 class="mb-3">$8,500</h3>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <p class="mb-0">Previous Month <span class="text-muted">$7,500</span></p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <div class="d-flex justify-content-between mb-3">
-                                        <div>
-                                            <span class="d-block">Profit</span>
-                                        </div>
-                                        <div>
-                                            <span class="text-danger">-75%</span>
-                                        </div>
-                                    </div>
-                                    <h3 class="mb-3">$1,12,000</h3>
-                                    <div class="progress mb-2" style="height: 5px;">
-                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <p class="mb-0">Previous Month <span class="text-muted">$1,42,000</span></p>
+
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
 
                 <div class="row">
                     <div class="col-md-4">
                         <div class="card punch-status">
                             <div class="card-body">
-                                <h5 class="card-title">Today Working Report <small class="text-muted">(<?= date('d M Y') ?>)</small></h5>
+                                <h5 class="card-title">Working Report <small class="text-muted date_show_res">(<?= date('d M Y') ?>)</small></h5>
+                                <input type="text" value="<?= $get_user_id ?>" id="user_activity_id" hidden>
                                 <div class="statistics">
                                     <div class="row">
                                         <div class="col-md-6 col-6">
                                             <div class="punch-det">
                                                 <h6>Login In at</h6>
-                                                <p><?= $login_time ?></p>
+                                                <p id="login_time">--:--</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-6 ">
                                             <div class="punch-det">
                                                 <h6>Logout at</h6>
-                                                <p><?= $logout_time ?></p>
+                                                <p id="logout_time">--:--</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="punch-info">
                                     <div class="punch-hours">
-                                        <span><?= convertTimeToHoursMinutes($total_time) ?> </span>
+                                        <span id="working_time">--:--</span>
                                     </div>
                                 </div>
                                 <div class="punch-btn-section">
@@ -266,13 +265,13 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
                                         <div class="col-md-6 col-6 text-center">
                                             <div class="stats-box">
                                                 <p>Break</p>
-                                                <h6><?= convertTimeToHoursMinutes($break_time) ?></h6>
+                                                <h6 id="break_time">--:--</h6>
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-6 text-center">
                                             <div class="stats-box">
                                                 <p>Idle Time</p>
-                                                <h6>-.- hrs</h6>
+                                                <h6>--:--</h6>
                                             </div>
                                         </div>
                                     </div>
@@ -283,38 +282,12 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
 
                     <div class="col-md-8">
                         <div class="card recent-activity">
-                            <div class="card-body">
+                            <div class="card-body card_activity">
                                 <h5 class="card-title">Task Activity</h5>
-                                <ul class="res-activity-list">
-                                    <?php foreach ($activity_task as $activity) {
-                                        if ($activity['task_activity_type'] == '1') {
-                                            $activity_type = "Active";
-                                        } else if ($activity['task_activity_type'] == '2') {
-                                            $activity_type = "Inactive";
-                                        } else if ($activity['task_activity_type'] == '3') {
-                                            $activity_type = "Sent For Approval";
-                                        } else if ($activity['task_activity_type'] == '4') {
-                                            $activity_type = "Reassigned";
-                                        } else if ($activity['task_activity_type'] == '5') {
-                                            $activity_type = "completed";
-                                        } else if ($activity['task_activity_type'] == '7') {
-                                            $activity_type = "Edited";
-                                        }
-                                        $task_details = get_all_task_details_by_id($DB, $activity["tm_id"]);
-                                    ?>
+                                <ul class="res-activity-list" id="res_activity_ul">
 
-                                        <li>
-                                            <p class="mb-0"><?= $task_details['0']["task_title"] ?> </p>
-                                            <p class="res-activity-time">
-                                                <i class="fa fa-clock-o"></i>
 
-                                                <?php
-                                                $dateTime = new DateTime($activity["tal_created_date"]);
-                                                $amPmFormat = $dateTime->format('h:i A');
-                                                echo $amPmFormat . ' ' . $activity_type; ?>
-                                            </p>
-                                        </li>
-                                    <?php } ?>
+
                                 </ul>
                             </div>
                         </div>
@@ -329,435 +302,7 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
 
 
 
-                <!-- <div class="row">
-                    <div class="col-md-6 d-flex">
-                        <div class="card card-table flex-fill">
-                            <div class="card-header">
-                                <h3 class="card-title mb-0">Invoices</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table table-nowrap custom-table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Invoice ID</th>
-                                                <th>Client</th>
-                                                <th>Due Date</th>
-                                                <th>Total</th>
-                                                <th>Status</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0001</a></td>
-                                                <td>
-                                                    <h2><a href="#">Global Technologies</a></h2>
-                                                </td>
-                                                <td>11 Mar 2019</td>
-                                                <td>$380</td>
-                                                <td>
-                                                    <span class="badge bg-inverse-warning">Partially Paid</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0002</a></td>
-                                                <td>
-                                                    <h2><a href="#">Delta Infotech</a></h2>
-                                                </td>
-                                                <td>8 Feb 2019</td>
-                                                <td>$500</td>
-                                                <td>
-                                                    <span class="badge bg-inverse-success">Paid</span>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0003</a></td>
-                                                <td>
-                                                    <h2><a href="#">Cream Inc</a></h2>
-                                                </td>
-                                                <td>23 Jan 2019</td>
-                                                <td>$60</td>
-                                                <td>
-                                                    <span class="badge bg-inverse-danger">Unpaid</span>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="invoices.php">View all invoices</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex">
-                        <div class="card card-table flex-fill">
-                            <div class="card-header">
-                                <h3 class="card-title mb-0">Payments</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table custom-table table-nowrap mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Invoice ID</th>
-                                                <th>Client</th>
-                                                <th>Payment Type</th>
-                                                <th>Paid Date</th>
-                                                <th>Paid Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0001</a></td>
-                                                <td>
-                                                    <h2><a href="#">Global Technologies</a></h2>
-                                                </td>
-                                                <td>Paypal</td>
-                                                <td>11 Mar 2019</td>
-                                                <td>$380</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0002</a></td>
-                                                <td>
-                                                    <h2><a href="#">Delta Infotech</a></h2>
-                                                </td>
-                                                <td>Paypal</td>
-                                                <td>8 Feb 2019</td>
-                                                <td>$500</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="invoice-view.php">#INV-0003</a></td>
-                                                <td>
-                                                    <h2><a href="#">Cream Inc</a></h2>
-                                                </td>
-                                                <td>Paypal</td>
-                                                <td>23 Jan 2019</td>
-                                                <td>$60</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="payments.php">View all payments</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6 d-flex">
-                        <div class="card card-table flex-fill">
-                            <div class="card-header">
-                                <h3 class="card-title mb-0">Clients</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table custom-table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Name</th>
-                                                <th>Email</th>
-                                                <th>Status</th>
-                                                <th class="text-end">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
-                                                        <a href="client-profile.php">Barry Cuda <span>CEO</span></a>
-                                                    </h2>
-                                                </td>
-                                                <td>barrycuda@example.com</td>
-                                                <td>
-                                                    <div class="dropdown action-label">
-                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa fa-dot-circle-o text-success"></i> Active
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="#" class="avatar"><img alt="" src="assets/img/profiles/avatar-19.jpg"></a>
-                                                        <a href="client-profile.php">Tressa Wexler <span>Manager</span></a>
-                                                    </h2>
-                                                </td>
-                                                <td>tressawexler@example.com</td>
-                                                <td>
-                                                    <div class="dropdown action-label">
-                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-07.jpg"></a>
-                                                        <a href="client-profile.php">Ruby Bartlett <span>CEO</span></a>
-                                                    </h2>
-                                                </td>
-                                                <td>rubybartlett@example.com</td>
-                                                <td>
-                                                    <div class="dropdown action-label">
-                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-06.jpg"></a>
-                                                        <a href="client-profile.php"> Misty Tison <span>CEO</span></a>
-                                                    </h2>
-                                                </td>
-                                                <td>mistytison@example.com</td>
-                                                <td>
-                                                    <div class="dropdown action-label">
-                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa fa-dot-circle-o text-success"></i> Active
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2 class="table-avatar">
-                                                        <a href="client-profile.php" class="avatar"><img alt="" src="assets/img/profiles/avatar-14.jpg"></a>
-                                                        <a href="client-profile.php"> Daniel Deacon <span>CEO</span></a>
-                                                    </h2>
-                                                </td>
-                                                <td>danieldeacon@example.com</td>
-                                                <td>
-                                                    <div class="dropdown action-label">
-                                                        <a class="btn btn-white btn-sm btn-rounded dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                                            <i class="fa fa-dot-circle-o text-danger"></i> Inactive
-                                                        </a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-success"></i> Active</a>
-                                                            <a class="dropdown-item" href="#"><i class="fa fa-dot-circle-o text-danger"></i> Inactive</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="clients.php">View all clients</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 d-flex">
-                        <div class="card card-table flex-fill">
-                            <div class="card-header">
-                                <h3 class="card-title mb-0">Recent Projects</h3>
-                            </div>
-                            <div class="card-body">
-                                <div class="table-responsive">
-                                    <table class="table custom-table mb-0">
-                                        <thead>
-                                            <tr>
-                                                <th>Project Name </th>
-                                                <th>Progress</th>
-                                                <th class="text-end">Action</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <h2><a href="project-view.php">Office Management</a></h2>
-                                                    <small class="block text-ellipsis">
-                                                        <span>1</span> <span class="text-muted">open tasks, </span>
-                                                        <span>9</span> <span class="text-muted">tasks completed</span>
-                                                    </small>
-                                                </td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped">
-                                                        <div class="progress-bar" role="progressbar" data-bs-toggle="tooltip" style="width: 65%" aria-label="65%" data-bs-original-title="65%"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2><a href="project-view.php">Project Management</a></h2>
-                                                    <small class="block text-ellipsis">
-                                                        <span>2</span> <span class="text-muted">open tasks, </span>
-                                                        <span>5</span> <span class="text-muted">tasks completed</span>
-                                                    </small>
-                                                </td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped">
-                                                        <div class="progress-bar" role="progressbar" data-bs-toggle="tooltip" style="width: 15%" aria-label="15%" data-bs-original-title="15%"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2><a href="project-view.php">Video Calling App</a></h2>
-                                                    <small class="block text-ellipsis">
-                                                        <span>3</span> <span class="text-muted">open tasks, </span>
-                                                        <span>3</span> <span class="text-muted">tasks completed</span>
-                                                    </small>
-                                                </td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped">
-                                                        <div class="progress-bar" role="progressbar" data-bs-toggle="tooltip" style="width: 49%" aria-label="49%" data-bs-original-title="49%"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2><a href="project-view.php">Hospital Administration</a></h2>
-                                                    <small class="block text-ellipsis">
-                                                        <span>12</span> <span class="text-muted">open tasks, </span>
-                                                        <span>4</span> <span class="text-muted">tasks completed</span>
-                                                    </small>
-                                                </td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped">
-                                                        <div class="progress-bar" role="progressbar" data-bs-toggle="tooltip" style="width: 88%" aria-label="88%" data-bs-original-title="88%"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <h2><a href="project-view.php">Digital Marketplace</a></h2>
-                                                    <small class="block text-ellipsis">
-                                                        <span>7</span> <span class="text-muted">open tasks, </span>
-                                                        <span>14</span> <span class="text-muted">tasks completed</span>
-                                                    </small>
-                                                </td>
-                                                <td>
-                                                    <div class="progress progress-xs progress-striped">
-                                                        <div class="progress-bar" role="progressbar" data-bs-toggle="tooltip" style="width: 100%" aria-label="100%" data-bs-original-title="100%"></div>
-                                                    </div>
-                                                </td>
-                                                <td class="text-end">
-                                                    <div class="dropdown dropdown-action">
-                                                        <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
-                                                        <div class="dropdown-menu dropdown-menu-right">
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-pencil m-r-5"></i> Edit</a>
-                                                            <a class="dropdown-item" href="javascript:void(0)"><i class="fa fa-trash-o m-r-5"></i> Delete</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <a href="projects.php">View all projects</a>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+
             </div>
             <!-- /Page Content -->
 
@@ -795,6 +340,130 @@ $activity_task =  get_all_activity_acc_date($DB, $date, $get_user_id);
     <?php include_once FOOTER; ?>
 
 
+
+    <script>
+        var activity_ul = document.getElementById('res_activity_ul');
+        let activity_li = document.querySelectorAll('.activity_li');
+
+        function check_active_role_ajax(user_id, date) {
+            $.ajax({
+                type: 'POST',
+                url: '../action/user_activity.php?do=user_activity',
+                data: {
+                    user_id: user_id,
+                    date: date,
+                },
+                success: function(response) {
+                    user_data = JSON.parse(response).user_data;
+                    console.log(JSON.parse(response).user_data);
+                    $('#login_time').html(user_data['login_time']);
+                    $('#working_time').html(user_data['total_time']);
+                    $('#break_time').html(user_data['break_time']);
+                    $('#logout_time').html(user_data['logout_time']);
+                    $('.date_show_res').html(user_data['res_date']);
+                    // $('#working_time').html(user_data['working_time']);/
+
+                    activity_task = user_data['activity_task'];
+                    if (activity_task.length == 0) {
+                        activity_ul.innerHTML = '<li>  <p class="mb-0"> No Activity  </p></li>';
+                    } else {
+                        activity_ul.innerHTML = '';
+                    }
+                    activity_ul.innerHTML = '';
+                    i = 0
+                    activity_task.forEach(function(activity) {
+                        i++;
+                        test = '';
+                        // console.log(activity.task_title, activity.activity_time);
+                        activity.activity_of_task.forEach(function(subActivity) {
+                            test += `<li class="activity_li activity_li_2">
+                            <p class="mb-0"> ${subActivity.task_activity_type}</p>
+                            <p class="res-activity-time ">
+                            <i class="fa fa-clock-o"></i>${subActivity.activity_time} 
+                            </p></li>`;
+                        });
+                        activity_ul.innerHTML += `<li class="activity_li" id="activity_li_${i}">
+                                       <div class="d-flex align-items-center justify-content-between">
+                                        <div> <p class="mb-0"> ${activity.task_title}</p>
+                                        <p class="res-activity-time d-flex align-items-center ">
+                                            <b>Active Time: </b> <span class="mx-1"> ${activity.first_active} </span> <b> | Inactive Task: </b> <span class="mx-1">${activity.last_inactive}</span> <b> | Working Time: </b> <span class="mx-1">${activity.working_time} hrs</span>
+                                        </p> </div>
+                                        <i class="fa fa-chevron-down mr-1" aria-hidden="true" id="activity_li_${i}_i"></i>
+                                       </div>
+                                        <div class="li_child_div" data_target="activity_li_${i}">
+                                           <ul class="res-activity-list punch-det" id="res_activity_ul_2">
+                                            ${test} <!-- Placeholder for nested loop content -->
+                                           </ul>
+                                        </div>
+                                    </li>`;
+
+
+                    })
+                    activity_li_test = document.querySelectorAll('.activity_li');
+                },
+                error: function(xhr, status, error) {
+                    // Handle errors here
+                    console.error('Error : ', error);
+
+                }
+            });
+        }
+
+        var user_id = $('#user_activity_id').val();
+        var date = $('#date').val();
+        $('#date').on('change', (e) => {
+            // console.log(e.target.value);
+            check_active_role_ajax(user_id, e.target.value)
+
+        })
+
+        check_active_role_ajax(user_id, date);
+
+
+
+        $('.res-activity-list').on('click', 'li', function(event) {
+            // Handle the click event on the li element
+            var clickedLi = $(this).attr('id');
+            var targetElement = $('[data_target="' + clickedLi + '"]');
+            console.log(targetElement);
+            var target_i = $('#' + clickedLi + '_i')
+            targetElement.toggleClass('active');
+            target_i.toggleClass('active_i');
+
+            // targetElement.slideToggle('active');
+        });
+    </script>
 </body>
 
 </html>
+
+<!--  <div class="li_child_div" data_target="activity_li_${i}">
+                                            <div class="punch-det active_punch d-flex mb-1  w-80">
+                                                 <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Active at</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                                 <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Inactive at</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                                  <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Working</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                            </div>
+                                            <div class="punch-det active_punch  d-flex mb-1  w-80">
+                                                 <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Active at</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                                 <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Inactive at</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                                  <div class="col-md-4 d-flex align-items-center justify-content-between">
+                                                 <h6>Working</h6>
+                                                 <p id="">--:--</p>
+                                                 </div>
+                                            </div>
+                                        </div> -->

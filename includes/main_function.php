@@ -1,5 +1,39 @@
 <?php
+function convertToAmPmFormat($inputDate)
+{
+    // Create a DateTime object from the input date string
+    $dateTime = DateTime::createFromFormat('H:i:s', $inputDate);
 
+    // Check if the conversion was successful
+    if ($dateTime !== false) {
+        // Format the DateTime object to AM/PM format
+        $amPmFormat = $dateTime->format('h:i A');
+        return $amPmFormat;
+    } else {
+        // Return an error message if the conversion fails
+        return "Invalid date format";
+    }
+}
+function convertTimeToHoursMinutes($timeString)
+{
+    // Create a DateTime object from the input time string
+    $dateTime = DateTime::createFromFormat('H:i:s', $timeString);
+
+    // Check if the conversion was successful
+    if ($dateTime !== false) {
+        // Get hours and minutes separately
+        $hours = $dateTime->format('H');
+        $minutes = $dateTime->format('i');
+
+        // Format the result
+        $result = $hours . ':' . $minutes . ' hrs';
+
+        return $result;
+    } else {
+        // Return an error message if the conversion fails
+        return "Invalid time format";
+    }
+}
 function addTwoTimes($time1, $time2)
 {
     // it will not add more than 24 hours 
@@ -367,6 +401,178 @@ function get_all_activity_acc_date(PDO $DB, $date, $user = null)
     }
 
     $sql = "SELECT * FROM tbl_task_activities_log WHERE tal_created_by = :user_id AND DATE(tal_created_date) = :date_created ORDER BY `id` ASC";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(':user_id', $user);
+    $statement->bindValue(':date_created', $date);
+
+    $statement->execute();
+
+    $results = $statement->fetchAll();
+
+    return $results;
+}
+function get_all_activity_acc_date_or_task(PDO $DB, $date, $task_id, $user = null)
+{
+    if ($user === null) {
+        $user = $_SESSION['user_id'];
+    }
+
+    $sql = "SELECT * FROM tbl_task_activities_log WHERE tal_created_by = :user_id AND DATE(tal_created_date) = :date_created AND tm_id = :tm_id ORDER BY `id` ASC";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(':user_id', $user);
+    $statement->bindValue(':date_created', $date);
+    $statement->bindValue(':tm_id', $task_id);
+
+    $statement->execute();
+
+    $results = $statement->fetchAll();
+
+    return $results;
+}
+
+
+function get_daily_task_time_acc_date_or_task(PDO $DB, $date,  $task_id, $user = null)
+{
+    if ($user === null) {
+        $user = $_SESSION['user_id'];
+    }
+
+    $sql = "SELECT * FROM tbl_task_activities_log WHERE tal_created_by = :user_id AND DATE(tal_created_date) = :date_created AND tm_id = :tm_id AND (task_activity_type = 1 OR task_activity_type = 2) ORDER BY `id` ASC";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(':user_id', $user);
+    $statement->bindValue(':date_created', $date);
+    $statement->bindValue(':tm_id', $task_id);
+
+    $statement->execute();
+
+    $results = $statement->fetchAll();
+
+    $total_time = '';
+    $str_active_time = '';
+    $str_inactive_time = '';
+    $i = 0;
+    foreach ($results as $row) {
+        if (
+            $i == 0
+        ) {
+            if ($row['task_activity_type'] == 2) {
+                continue;
+            } else {
+                $str_active_time = $row['tal_created_date'];
+            }
+        } else {
+            if ($row['task_activity_type'] == 1) {
+                $str_active_time = $row['tal_created_date'];
+            }
+            if ($row['task_activity_type'] == 2) {
+                $str_inactive_time = $row['tal_created_date'];
+
+                $datetime1 = new DateTime($str_active_time);
+                $datetime2 = new DateTime($str_inactive_time);
+
+                // Calculate the difference in seconds
+                $diff_seconds = $datetime2->getTimestamp() - $datetime1->getTimestamp();
+
+                // Convert seconds to hours and minutes
+                $total_hours = floor($diff_seconds / 3600); // Whole hours
+                $remaining_seconds = $diff_seconds % 3600; // Remaining seconds after whole hours
+                $total_minutes = floor($remaining_seconds / 60); // Whole minutes
+
+                // Format hours and minutes as "00:00"
+                $total_hours_str = str_pad($total_hours, 2, '0', STR_PAD_LEFT);
+                $total_minutes_str = str_pad($total_minutes, 2, '0', STR_PAD_LEFT);
+                $total_in_time = $total_hours_str . ':' . $total_minutes_str;
+                if ($total_time == '') {
+                    $total_time =  $total_in_time;
+                } else {
+                    // $total_time = addTimes(, $total_in_time);
+                    // Convert time strings to seconds
+                    $time1_parts = explode(':', $total_time);
+                    $time2_parts = explode(':', $total_in_time);
+
+                    $time1_seconds = $time1_parts[0] * 3600 + $time1_parts[1] * 60;
+                    $time2_seconds = $time2_parts[0] * 3600 + $time2_parts[1] * 60;
+
+                    // Add the seconds together
+                    $total_seconds = $time1_seconds + $time2_seconds;
+
+                    // Calculate hours, minutes, and seconds
+                    $hours = floor($total_seconds / 3600);
+                    $minutes = floor(($total_seconds % 3600) / 60);
+                    // $seconds = $total_seconds % 60;
+
+                    // Format the result
+                    $result = sprintf("%02d:%02d", $hours, $minutes);
+
+                    return $result;
+                }
+            }
+        }
+
+
+
+
+        $i++;
+    }
+    return $total_time;
+}
+
+function get_first_activity_acc_date_or_task_or_activity(PDO $DB, $date, $task_id, $activity_type, $user = null)
+{
+    if ($user === null) {
+        $user = $_SESSION['user_id'];
+    }
+
+    $sql = "SELECT tal_created_date FROM tbl_task_activities_log WHERE tal_created_by = :user_id AND DATE(tal_created_date) = :date_created AND tm_id = :tm_id AND task_activity_type = :task_activity_type ORDER BY `id` ASC LIMIT 1";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(':user_id', $user);
+    $statement->bindValue(':date_created', $date);
+    $statement->bindValue(':tm_id', $task_id);
+    $statement->bindValue(':task_activity_type', $activity_type);
+
+    $statement->execute();
+
+    $results = $statement->fetchAll();
+
+    return $results;
+}
+
+function get_last_activity_acc_date_or_task_or_activity(PDO $DB, $date, $task_id, $activity_type, $user = null)
+{
+    if ($user === null) {
+        $user = $_SESSION['user_id'];
+    }
+
+    $sql = "SELECT tal_created_date FROM tbl_task_activities_log WHERE tal_created_by = :user_id AND DATE(tal_created_date) = :date_created AND tm_id = :tm_id AND task_activity_type = :task_activity_type ORDER BY `id` DESC LIMIT 1";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(':user_id', $user);
+    $statement->bindValue(':date_created', $date);
+    $statement->bindValue(':tm_id', $task_id);
+    $statement->bindValue(':task_activity_type', $activity_type);
+
+    $statement->execute();
+
+    $results = $statement->fetchAll();
+
+    return $results;
+}
+function get_distinct_all_activity_acc_date(PDO $DB, $date, $user = null)
+{
+    if ($user === null) {
+        $user = $_SESSION['user_id'];
+    }
+
+    $sql = "SELECT DISTINCT tm_id FROM tbl_task_activities_log  WHERE tal_created_by = :user_id  AND DATE(tal_created_date) = :date_created  ORDER BY `id` ASC;";
 
     $statement = $DB->prepare($sql);
 
@@ -1104,6 +1310,27 @@ function get_working_time_date_wise(PDO $DB, $date, $user_id)
 //     }
 // }
 
+function log_of_task_activity(PDO $DB, $task_id, $pm_id, $activity_type, $user_id = null)
+{
+    if ($user_id == null) {
+        $created_by = $_SESSION['user_id'];
+    } else {
+        $created_by = $user_id;
+    }
+
+
+    $sql = "INSERT INTO tbl_task_activities_log(`tm_id`,`pm_id`,`task_activity_type`,`tal_created_by`) VALUES (:tm_id,:pm_id,:task_activity_type,:tal_created_by)";
+
+    $statement = $DB->prepare($sql);
+
+    $statement->bindValue(":tm_id", $task_id);
+    $statement->bindValue(":pm_id", $pm_id);
+    $statement->bindValue(":task_activity_type", $activity_type);
+    $statement->bindValue(":tal_created_by", $created_by);
+
+    $res = $statement->execute();
+}
+
 function inactive_cur_task_of_user(PDO $DB, $user_id, $currentDateTime = null)
 {
 
@@ -1158,26 +1385,7 @@ function inactive_cur_task_of_user(PDO $DB, $user_id, $currentDateTime = null)
 
 
 
-function log_of_task_activity(PDO $DB, $task_id, $pm_id, $activity_type, $user_id = null)
-{
-    if ($user_id == null) {
-        $created_by = $_SESSION['user_id'];
-    } else {
-        $created_by = $user_id;
-    }
 
-
-    $sql = "INSERT INTO tbl_task_activities_log(`tm_id`,`pm_id`,`task_activity_type`,`tal_created_by`) VALUES (:tm_id,:pm_id,:task_activity_type,:tal_created_by)";
-
-    $statement = $DB->prepare($sql);
-
-    $statement->bindValue(":tm_id", $task_id);
-    $statement->bindValue(":pm_id", $pm_id);
-    $statement->bindValue(":task_activity_type", $activity_type);
-    $statement->bindValue(":tal_created_by", $created_by);
-
-    $res = $statement->execute();
-}
 
 function get_active_task_of_any_user(PDO $DB, $user_id)
 {
